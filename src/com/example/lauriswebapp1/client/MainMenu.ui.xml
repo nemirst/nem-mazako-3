@@ -1,0 +1,36 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:with field='res' type='com.example.lauriswebapp1.client.MyResources' />
+
+	<g:VerticalPanel horizontalAlignment="ALIGN_CENTER"
+		verticalAlignment="ALIGN_MIDDLE" width="100%" height="100%"
+		addStyleNames="{res.my.parent}">
+		<g:HTMLPanel>
+			<g:Label addStyleNames="{res.my.title}">Ņem mazāko III</g:Label>
+			<g:Button addStyleNames="{res.my.separate} {res.my.enlarge}"
+				ui:field="buttonNoteikumi">Noteikumi</g:Button>
+			<g:HTMLPanel addStyleNames="{res.my.enlarge}">
+				<g:Label>Kurš sāk?</g:Label>
+				<g:RadioButton ui:field="choiceComputer" name="starterChoice"
+					value="true" enabled="true">Dators</g:RadioButton>
+				<g:RadioButton ui:field="choicePlayer" name="starterChoice"
+					value="false" enabled="true">Lietotājs</g:RadioButton>
+			</g:HTMLPanel>
+			<g:Button addStyleNames="{res.my.separate} {res.my.enlarge}"
+				ui:field="buttonSakt">Sākt
+				spēli</g:Button>
+		</g:HTMLPanel>
+		<g:HTMLPanel addStyleNames="{res.my.box}">
+		<g:Label>Statistika</g:Label>
+		Dators:
+		<g:InlineLabel ui:field="winsPC"></g:InlineLabel>
+		<g:InlineLabel addStyleNames="{res.my.separate}"></g:InlineLabel>
+		Lietotājs:
+		<g:InlineLabel ui:field="winsUser"></g:InlineLabel>
+		<g:InlineLabel addStyleNames="{res.my.separate}"></g:InlineLabel>
+		Neizšķirts:
+		<g:InlineLabel ui:field="draws"></g:InlineLabel>
+		</g:HTMLPanel>
+	</g:VerticalPanel>
+</ui:UiBinder>

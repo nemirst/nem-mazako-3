@@ -1,0 +1,28 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:with field='res' type='com.example.lauriswebapp1.client.MyResources' />
+	<ui:style>
+	.previous {
+		font-size: 500%;
+		opacity: 0.3;
+	}
+	
+	.current {
+		font-size: 1000%;
+	}
+	</ui:style>
+
+	<g:VerticalPanel horizontalAlignment="ALIGN_CENTER"
+		verticalAlignment="ALIGN_MIDDLE" width="100%" height="100%"
+		addStyleNames="{res.my.parent}">
+		<g:HTMLPanel>
+			<g:Label ui:field="resultText" addStyleNames="{res.my.separate} {res.my.enlarge}"></g:Label>
+			<g:HTMLPanel ui:field='previous' addStyleNames="{style.previous}"></g:HTMLPanel>
+			<g:HTMLPanel ui:field='current' addStyleNames="{style.current} {res.my.box}"></g:HTMLPanel>
+			<g:Button ui:field='buttonPC' addStyleNames="{res.my.separate} {res.my.enlarge}">Datora gājiens</g:Button>
+			<g:Button ui:field='buttonLabi' addStyleNames="{res.my.separate} {res.my.enlarge}"
+				visible="false">Labi</g:Button>
+		</g:HTMLPanel>
+	</g:VerticalPanel>
+</ui:UiBinder> 

@@ -1,0 +1,48 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:with field='res' type='com.example.lauriswebapp1.client.MyResources' />
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<g:DialogBox ui:field="dialogBox" autoHideEnabled="true"
+			glassEnabled="true">
+			<g:caption>Noteikumi</g:caption>
+			<g:HTMLPanel>
+				Spēles sakumā ir dota 6 ciparu virkne ar ciparu vērtībām no
+				1
+				līdz 6. Spēlētāji (dators un lietotājs) izpilda gājienus pēc kārtas.
+				Gājiena laikā
+				spēlētājs
+				var:
+				<ul>
+					<li>
+						saskaitīt ciparu pārus (pirmo ar otro, trešo ar ceturto,
+						piekto
+						ar sesto)
+						un summu ievietot saskaitīto skaitļu vietā (ja
+						summa ir
+						lielāka
+						par 6, tad 7 = 6, 8 = 5, 9 = 4, 10 = 3, 11 = 2, 12
+						= 1)
+					</li>
+					<li>
+						nodzēst pēdējo ciparu.
+					</li>
+				</ul>
+				<p>Spēle beidzas, kad ciparu virknē paliek divi cipari.
+					Ja pirmais
+					cipars ir lielāks nekā otrais, tad zaudē spēlētājs, kurš uzsāka
+					spēli. Ja otrais cipars ir lielāks nekā
+					pirmais, tad
+					zaudē
+					otrais
+					spēlētājs.
+					Ja cipari ir vienādi, tad
+					rezultāts ir
+					neizšķirts.</p>
+			</g:HTMLPanel>
+		</g:DialogBox>
+	</g:HTMLPanel>
+</ui:UiBinder> 

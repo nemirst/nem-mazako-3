@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+
+.parent {
+	background: #34495e;
+	color: #33FFFF;;
+}
+
+.separate {
+	margin: 1em;
+}
+
+.enlarge {
+	font-size: 250%;
+}
+
+.title {
+	font-size: 400%;
+	border: #33FFFF solid 5px;
+	border-radius: 25px;
+}
+
+.addUp {
+	color: #00FF00;
+	cursor: url(lauriswebapp1project/images/plus.png), auto;
+}
+
+.drop {
+	color: #FF0000;
+	cursor: url(lauriswebapp1project/images/delete.png), auto;
+}
+
+.box {
+ 	border: 1px solid #33FFFF;
+}
